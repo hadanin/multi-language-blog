@@ -34,10 +34,10 @@ test("sample_test_check_create_context", async () => {
               changeToEnglish
             </button>
             <button
-              data-testid="changeToPersian"
-              onClick={value.changeToPersian}
+              data-testid="changeToSpanish"
+              onClick={value.changeToSpanish}
             >
-              changeToPersian
+              changeToSpanish
             </button>
           </div>
         )}

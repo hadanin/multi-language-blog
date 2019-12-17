@@ -99,7 +99,7 @@ export default function Navbar() {
                 onClose={handleClose}
                 onClick={updateLanguage}
               >
-                <MenuItem id={"_changeToPersian"}>فارسی</MenuItem>
+                <MenuItem id={"_changeToSpanish"}>Español</MenuItem>
                 <MenuItem id={"_changeToEnglish"}>English</MenuItem>
               </Menu>
             </Toolbar>

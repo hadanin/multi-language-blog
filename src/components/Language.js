@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import LanguageContext from "../contexts/index";
-export const persian = {
-  language: "Persian",
+export const Spanish = {
+  language: "Español",
   words: {
-    home: "خانه",
-    events: "رویداد ها",
-    aboutUs: "درباره ما",
-    contactUs: "تماس با ما",
-    language: "زبان"
+    home: "Casa",
+    events: "Eventos",
+    aboutUs: "Acerca de",
+    contactUs: "Contáctenos",
+    language: "Idioma"
   }
 };
 export const english = {
@@ -21,15 +21,15 @@ export const english = {
   }
 };
 export class LanguageProvider extends Component {
-  state = persian;
+  state = Spanish;
   changeToEnglish = () => {
     this.setState(english);
   };
   changeToPersoan = () => {
-    this.setState(persian);
+    this.setState(Spanish);
   };
   updateLanguage = e => {
-    if (e.target.id === "_changeToPersian") this.changeToPersoan();
+    if (e.target.id === "_changeToSpanish") this.changeToPersoan();
     else if (e.target.id === "_changeToEnglish") this.changeToEnglish();
   };
   render() {
